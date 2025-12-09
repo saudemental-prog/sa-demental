@@ -1,133 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saúde Mental</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saúde Mental</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #eaf9e5;
-        color: #2f4f2f;
-    }
-
-    header {
-        background: #6ccf72;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    nav {
-        background: #8be48f;
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #2f4f2f;
-        font-weight: bold;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .card {
-        background: white;
-        padding: 18px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-        margin-top: 0;
-        color: #3b6e3b;
-    }
-
-    footer {
-        background: #6ccf72;
-        text-align: center;
-        padding: 15px;
-        margin-top: 30px;
-        color: white;
-    }
-</style>
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: #ffffff;
+            color: #0d2a4a;
+        }
+        header {
+            background: #0a4fa3;
+            padding: 25px;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 0 8px rgba(0,0,0,0.4);
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 20px;
+            font-weight: 500;
+        }
+        section {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #f8faff;
+            border-radius: 12px;
+        }
+        h2 {
+            color: #0a4fa3;
+            font-weight: 600;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #dbe7ff;
+        }
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: #0a4fa3;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>Saúde Mental</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-<header>
-    Saúde Mental Importa
-</header>
+    <div class="hero">Cuidar da mente também é um ato de coragem.</div>
 
-<nav>
-    <a href="#inicio">Início</a>
-    <a href="#ansiedade">Ansiedade</a>
-    <a href="#autocuidado">Autocuidado</a>
-    <a href="#ajuda">Onde Buscar Ajuda</a>
-</nav>
+    <section id="sobre">
+        <h2>Sobre Saúde Mental</h2>
+        <p>Saúde mental é um estado de bem-estar no qual a pessoa consegue lidar com o estresse da vida, trabalhar de forma produtiva e contribuir para sua comunidade. Não é apenas ausência de transtornos, mas o equilíbrio emocional e psicológico.</p>
+    </section>
 
-<div class="container">
+    <section id="recursos">
+        <h2>Recursos e Informações</h2>
+        <p>Aqui você encontra explicações completas sobre os transtornos mais comuns, sinais de alerta e formas de buscar ajuda. Informação salva vidas — quanto mais você entende, mais preparado fica para ajudar a si mesmo e aos outros.</p>
 
-    <div class="card" id="inicio">
-        <h2>Bem-vindo(a)</h2>
-        <p>
-            Este site foi criado para trazer informações simples e importantes sobre saúde mental.  
-            Aqui você encontra explicações rápidas, dicas de autocuidado e orientações sobre onde buscar ajuda.
-        </p>
-    </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Ansiedade</h3>
+                <p><strong>Sintomas:</strong> preocupação intensa, sensação de perigo, coração acelerado, tensão muscular, dificuldade para dormir.</p>
+                <p><strong>Como lidar:</strong> técnicas de respiração, atividade física, rotina organizada, pausas e autocuidado.</p>
+                <p><strong>Quando procurar ajuda:</strong> quando a ansiedade impede suas atividades diárias ou provoca crises frequentes.</p>
+            </div>
 
-    <div class="card" id="ansiedade">
-        <h2>O que é Ansiedade?</h2>
-        <p>
-            A ansiedade é uma reação natural do corpo, mas quando é intensa e frequente, pode atrapalhar o dia a dia.  
-        </p>
-        <ul>
-            <li>Preocupação constante</li>
-            <li>Medo ou tensão sem motivo claro</li>
-            <li>Coração acelerado</li>
-            <li>Dificuldade de dormir</li>
-        </ul>
-        <p><strong>Dica:</strong> Respire fundo 4 segundos — segure 4 — solte 4. Repita 5 vezes.</p>
-    </div>
+            <div class="card">
+                <h3>Depressão</h3>
+                <p><strong>Sintomas:</strong> tristeza contínua, perda de interesse em atividades, cansaço extremo, mudanças no sono e apetite.</p>
+                <p><strong>Como apoiar alguém:</strong> ouvir sem julgamento, incentivar a buscar ajuda, evitar frases que minimizam o sofrimento.</p>
+                <p><strong>Tratamento:</strong> acompanhamento psicológico e, em alguns casos, psiquiátrico.</p>
+            </div>
 
-    <div class="card" id="autocuidado">
-        <h2>Dicas de Autocuidado</h2>
-        <ul>
-            <li>Durma bem e em horários regulares</li>
-            <li>Faça atividade física</li>
-            <li>Tenha momentos de descanso</li>
-            <li>Converse com alguém de confiança</li>
-            <li>Pratique respiração e mindfulness</li>
-        </ul>
-    </div>
+            <div class="card">
+                <h3>Crises de Pânico</h3>
+                <p><strong>O que é:</strong> episódios súbitos de medo intenso, com sintomas físicos como falta de ar, tremores, tontura.</p>
+                <p><strong>Primeiros socorros emocionais:</strong> ajuda a pessoa a respirar devagar, fique ao lado dela e diga que a crise vai passar.</p>
+                <p><strong>Prevenção:</strong> terapia cognitivo-comportamental é altamente eficaz.</p>
+            </div>
 
-    <div class="card" id="ajuda">
-        <h2>Onde Buscar Ajuda</h2>
-        <p>Se você ou alguém próximo estiver precisando de apoio, procure:</p>
-        <ul>
-            <li>Postos de saúde</li>
-            <li>Centros de Atenção Psicossocial (CAPS)</li>
-            <li>Clínicos gerais e psicólogos</li>
-            <li>Contato de emergência local</li>
-        </ul>
-    </div>
+            <div class="card">
+                <h3>Autocuidado</h3>
+                <p><strong>Práticas essenciais:</strong> sono regulado, alimentação adequada, hidratação, atividade física e pausas mentais.</p>
+                <p><strong>Autocuidado emocional:</strong> escrever sentimentos, definir limites, evitar sobrecarga, cultivar hobbies.</p>
+                <p><strong>Importante:</strong> autocuidado não é egoísmo — é manutenção da saúde.</p>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <section id="ajuda">
+        <h2>Onde Procurar Ajuda</h2>
+        <p>Se você ou alguém que você conhece está passando por dificuldades emocionais, existe ajuda disponível. Procurar apoio é um ato de força, não de fraqueza.</p>
 
-<footer>
-    © 2025 - Informações educativas. Não substitui acompanhamento profissional.
-</footer>
+        <div class="cards">
+            <div class="card">
+                <h3>CVV – 188</h3>
+                <p>Atendimento 24h, gratuito e sigiloso. Também pelo chat no site oficial.</p>
+            </div>
+            <div class="card">
+                <h3>UBS / CAPS</h3>
+                <p>Postos de saúde e Centros de Atenção Psicossocial oferecem apoio psicológico gratuito.</p>
+            </div>
+            <div class="card">
+                <h3>Profissionais Privados</h3>
+                <p>Psicólogos e psiquiatras podem oferecer atendimento presencial ou online.</p>
+            </div>
+        </div>
 
+        <p style="margin-top:20px;font-size:0.9rem;opacity:0.8;">Se estiver em situação de emergência, procure o SAMU (192) ou a unidade de saúde mais próxima.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Saúde Mental
+    </footer>
 </body>
 </html>
